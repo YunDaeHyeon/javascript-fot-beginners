@@ -8,10 +8,12 @@
     <title>Daehyeon Document</title>
 </head>
 <body>
-    <div id="login-form">
-        <input type="text" placeholder="What is your name?"/>
+    <form id="login-form">
+        <!-- input태그에서 required는 필수로 입력해야함을 말하며, maxlength는 최대 입력 가능 수를 말한다.-->
+        <!-- 이때, 위와 같은 input의 유효성 검사를 실행하기 위해서는 input이 form 내부에 있어야 한다.-->
+        <input required maxlength="15" type="text" placeholder="What is your name?"/>
         <button>Log In</button>
-    </div>
+    </form>
     <script src="app.js"></script>
 </body>
 </html>
