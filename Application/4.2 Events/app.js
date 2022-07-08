@@ -29,9 +29,11 @@ loginForm.addEventListener("submit", onLoginSubmit); //submit 감지 이벤트 (
 */
 
 function handleLinkClick(event){
-    event.preventDefault();
+    event.preventDefault(); // 링크(브라우저)의 기본 동작 막기
     console.dir(event);
 }
 
 const link = document.querySelector("a");
 link.addEventListener("click", handleLinkClick);
+
+// !! addEventListener에 지정된 Function은 직접 하는 것이 아닌 브라우저가 한다. !!
